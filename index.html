@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hindustan Tyre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="top-header" id="home">
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Hindustan Tires">
+        </div>
+
+        <div class="header-icons">
+
+            <a href="https://maps.app.goo.gl/LVmURTy9P4w9MpfJ8" target="_blank">
+                <img src="images/location.png" alt="Location">
+            </a>
+
+            <a href="mailto:HindustanTyre@example.com">
+                <img src="images/email.png" alt="Email">
+            </a>
+
+            <span onclick="goTo('contact')">
+                <img src="images/phone.png" alt="Contact">
+            </span>
+
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <ul>
+        <li><span onclick="goTo('home')">Home</span></li>
+        <li><span onclick="goTo('services')">Services</span></li>
+
+        <li class="dropdown">
+            <span>Tyre Brands</span>
+            <div class="dropdown-menu">
+                <div onclick="goTo('l')">Bridgestone</div>
+                <div onclick="goTo('l')">JK Tyre</div>
+                <div onclick="goTo('l')">Apollo</div>
+                <div onclick="goTo('l')">CEAT</div>
+                <div onclick="goTo('l')">Yokohama</div>
+                <div onclick="goTo('l')">Ultramile</div>
+            </div>
+        </li>
+
+        <li><span onclick="goTo('about')">About Us</span></li>
+        <li><span onclick="goTo('contact')">Contact</span></li>
+    </ul>
+</nav>
+
+<!-- ================= HOME SECTION ================= -->
+<section id="home" class="home-section">
+    <div class="home-content">
+        <h1>Welcome to Hindustan Tyres</h1>
+        <p>Your trusted partner for quality tyres and professional services</p>
+    </div>
+</section>
+
+
+<!-- ================= TYRE BRANDS ================= -->
+<section id="l">
+
+    <div class="l">
+        <h3>Our Tyre Brands</h3>
+    </div>
+
+    <!-- ================= LOGO SCROLL ================= -->
+    <section class="logo-cards-section">
+        <div class="logo-track">
+
+            <div class="logo-card"><img src="images/bd.jpg" alt="Bridgestone"></div>
+            <div class="logo-card"><img src="images/ceat.jpg" alt="CEAT"></div>
+            <div class="logo-card"><img src="images/jklogo.jpg" alt="JK Tyre"></div>
+            <div class="logo-card"><img src="images/ul.jpg" alt="Ultramile"></div>
+            <div class="logo-card"><img src="images/x.jpg" alt="Apollo"></div>
+            <div class="logo-card"><img src="images/yo.jpg" alt="Yokohama"></div>
+
+            <!-- duplicate for infinite scroll -->
+            <div class="logo-card"><img src="images/bd.jpg" alt="Bridgestone"></div>
+            <div class="logo-card"><img src="images/ceat.jpg" alt="CEAT"></div>
+            <div class="logo-card"><img src="images/jklogo.jpg" alt="JK Tyre"></div>
+            <div class="logo-card"><img src="images/ul.jpg" alt="Ultramile"></div>
+            <div class="logo-card"><img src="images/x.jpg" alt="Apollo"></div>
+            <div class="logo-card"><img src="images/yo.jpg" alt="Yokohama"></div>
+            <div class="logo-card"><img src="images/bd.jpg" alt="Bridgestone"></div>
+            <div class="logo-card"><img src="images/ceat.jpg" alt="CEAT"></div>
+
+        </div>
+    </section>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="serv">
+    <h1 class="about-heading">Our Services</h1>
+
+    <section class="slider-section">
+
+        <button class="nav-btn left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slider">
+
+            <div class="slide">
+                <img src="images/v1.jpg" alt="Wheel Alignment">
+                <h3>Wheel Alignment</h3>
+                <p>
+                    Wheel alignment adjusts your vehicle’s suspension angles so the wheels stay properly aligned
+                    with the road. This improves handling, ensures safer driving, and helps extend tyre life.
+                </p>
+            </div>
+
+            <div class="slide">
+                <img src="images/v2.jpg" alt="Wheel Balancing">
+                <h3>Wheel Balancing</h3>
+                <p>
+Wheel balancing is a specialised service that ensures the weight is evenly distributed across the entire tyre and wheel assembly. This is crucial for a smooth and safe ride.                </p>
+            </div>
+
+            <div class="slide">
+                <img src="images/v3.jpg" alt="Tyre Replacement">
+                <h3>Tyre Replacement</h3>
+                <p>
+Tyre replacement keeps your vehicle safe and road-ready by fitting high-quality tyres for better grip, performance, and reliability.                </p>
+            </div>
+
+        </div>
+
+        <button class="nav-btn right" onclick="nextSlide()">&#10095;</button>
+
+    </section>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-section">
+
+    <div class="about-heading2">
+        <h2>About Hindustan Tyres</h2>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-text">
+            <p>
+               Hindustan Tires is a trusted and well-established tyre shop committed to delivering
+                high-quality tyres and reliable automotive services. With years of experience in the
+                industry, we take pride in offering genuine products from premium tyre brands that ensure
+                safety, durability, and superior road performance.
+                <br><br>
+                Our shop is equipped with modern tools and advanced technology to provide professional
+                services such as wheel alignment, wheel balancing, and tyre replacement. Every service
+                is handled by skilled technicians who understand the importance of precision and care.
+                <br><br>
+                At Hindustan Tires, customer satisfaction is our top priority. We focus on honest guidance,
+                dependable service, and quality workmanship to keep every journey safe, smooth, and worry-free.
+            </p>
+        </div>
+
+        <div class="about-slider">
+            <button class="about-btn left" onclick="prevAboutSlide()">&#10094;</button>
+
+            <div class="about-images">
+                <img src="images/v1.jpg" class="about-slide active">
+                <img src="images/v2.jpg" class="about-slide">
+                <img src="images/v3.jpg" class="about-slide">
+            </div>
+
+            <button class="about-btn right" onclick="nextAboutSlide()">&#10095;</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-wrapper">
+
+        <div class="contact-left">
+
+            <div class="contact-item">
+                <strong>Owner Name:</strong><br>
+                <span>Mr. Nikhil Gaykar</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Contact Number:</strong><br>
+                <span>+91 XXXXX XXXXX</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Email:</strong><br>
+                <span>HindustanTyre@example.com</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Shop Address:</strong><br>
+                <span>
+                    Hindustan Tyres,<br>
+                    NH-3 At Vahuli, Near Hotel Shivsagar<br>
+                    Post Padgha, Tal Bhiwandi, Maharashtra 421302
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Location:</strong><br>
+                <a href="https://maps.app.goo.gl/LVmURTy9P4w9MpfJ8" target="_blank">
+                    View on Google Maps
+                </a>
+            </div>
+
+        </div>
+
+        <div class="contact-right">
+            <img src="images/contact-man.png" alt="Contact Us">
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <p>© 2026 Hindustan Tyres | All Rights Reserved | Developed by Mayuresh Patil</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
