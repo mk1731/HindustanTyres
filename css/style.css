@@ -102,6 +102,20 @@
     align-items: center;
     font-size: 25px;
     justify-content: center;
+margin: 20px;    
+}
+
+.c {
+    
+    margin-top: 50px;
+    
+    font-size: 20px;
+    color: #000000;
+    transform: translateY(-50%);
+    background: #e7c040;
+    border: none;
+    border-radius: 7%;
+    padding: 20px 55px ;
 }
 
 
@@ -111,6 +125,7 @@
     height: calc(100vh - 75px);
     background: #f2f2f2;
     display: flex;
+    padding: 0%;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -197,14 +212,13 @@
 /* ===== LOGO CARDS ===== */
 .logo-cards-section {
     background: #f2f2f2;
-    padding: 50px 0;
+    padding: 35px 0;
     overflow: hidden;
 }
 
 .logo-track {
     display: flex;
     gap: 30px;
-    animation: scroll-left 20s linear infinite;
 }
 
 .logo-card {
@@ -218,6 +232,34 @@
     object-fit: contain;
 }
 
+/* Strip 1 & 3 → LEFT TO RIGHT */
+.strip-left-right .logo-track {
+    animation: move-left-right 22s linear infinite;
+}
+
+/* Strip 2 → RIGHT TO LEFT */
+.strip-right-left .logo-track {
+    animation: move-right-left 22s linear infinite;
+}
+/* ===== LOGO ANIMATIONS ===== */
+@keyframes move-left-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes move-right-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 /* ===== ABOUT SECTION ===== */
 .about-section {
     padding: 80px 60px;
@@ -227,14 +269,16 @@
 /* NEW: centered heading (does not affect other layout) */
 .about-heading {
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    padding: 0;
 }
 
-.about-heading h2 {
-    font-size: 36px;
+.about-heading2 {
+        margin-bottom: 20px;
+    margin-top: 25px;
+font-size: medium;
     color: #0c025f;
-    top: 90px;
 }
 
 /* FIX: proper 50 / 50 layout without breaking original */
@@ -311,21 +355,16 @@
 .about-btn.right { right: 10px; }
 
 /* ===== CONTACT / OTHER SECTIONS ===== */
-#l #services, #about, #contact {
-    padding: 50px;
+#l ,#services, #about, #contact {
+    padding-top: 50px;
     background: #f2f2f2;
     text-align: center;
 }
 
-/* ===== LOGO SCROLL ANIMATION ===== */
-@keyframes scroll-left {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
 /* ===== CONTACT SECTION LAYOUT ===== */
 .contact-section {
-    background: #f2f2f2; /* UNCHANGED */
-    padding: 80px 60px;
+    background: #f2f2f2; 
+    padding: 30px 60px;
 }
 
 .contact-wrapper {
