@@ -1,0 +1,3 @@
+git add .
+git commit -m "Updated Instant App code"
+git push origin master
